@@ -1,0 +1,21 @@
+---
+import { Markdown } from 'astro/components'
+import DefaultPageLayout from '$/layouts/default.astro'
+import Prose from '$/components/Prose.astro'
+
+const title = 'About';
+const description = 'About the project';
+---
+<DefaultPageLayout content={{ title, description }}>
+    <Prose>
+        <Markdown>
+            Dihak's personal blog, all articles is write by me.
+        </Markdown>
+    </Prose>
+</DefaultPageLayout>
+
+<style>
+    .author {
+        @apply flex flex-col w-full
+    }
+</style>
